@@ -16,12 +16,6 @@ const renderGoodsList = (list = goods) => {
         item => renderGoodsItem(item)
     ).join('');
 
-    /*const renderGoodsItemStyle = ({ title, price }) => {
-            goods - item.style.display = "inline";
-            title.style.fontFamily = "sans-serif";
-            goods - item.style.backgroundColor = "#ffffff";
-            return;
-        };*/
     $goodsList.insertAdjacentHTML('beforeend', goodsList);
 }
 
