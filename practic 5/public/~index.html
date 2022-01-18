@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>eShop</title>
+  <style>
+    .modal {
+      display: none;
+      width: 800px;
+      min-height: 600px;
+      position: absolute;
+      top: 100px;
+      left: calc(50%-400px);
+      border: 1px solid rgb(236, 220, 220);
+      background-color: #fff;
+      border-radius: 3px;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <button class="cart-button" type="button">Корзина</button>
+    <input type="text" id="search-input">
+    <button id="search-btn">Поиск</button>
+  </header>
+  <main>
+
+    <div class="goods-list"></div>
+
+  </main>
+
+  <div class="modal">
+    <button id="close-btn">close</button>
+    <div class="cart-list"></div>
+  </div>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
